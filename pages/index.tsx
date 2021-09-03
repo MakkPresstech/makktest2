@@ -37,10 +37,10 @@ export async function getStaticProps({
 
 export default function Home({
   products,
-}: InferGetStaticPropsType<typeof getStaticProps>) {
+}: InferGetStaticPropsType<typeof getStaticProps>) { 
   return (
     <>
-      <img src="https://cdn11.bigcommerce.com/s-dee9d/images/stencil/original/carousel/421/giant_teddy_bear_brand_home_page_1920_850_valentines_day.jpg"/>
+      <img className="mb-10" src="https://cdn11.bigcommerce.com/s-dee9d/images/stencil/original/carousel/421/giant_teddy_bear_brand_home_page_1920_850_valentines_day.jpg"/>
       <Grid variant="filled">
         {products.slice(0, 3).map((product: any, i: number) => (
           <ProductCard
