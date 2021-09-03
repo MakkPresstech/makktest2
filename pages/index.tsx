@@ -34,7 +34,7 @@ export async function getStaticProps({
     revalidate: 60,
   }
 }
-
+ 
 export default function Home({
   products,
 }: InferGetStaticPropsType<typeof getStaticProps>) { 
